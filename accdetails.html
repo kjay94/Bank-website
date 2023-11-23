@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+        /* Styles for the name of the page */
+.page-name {
+    text-align: left;
+    padding: 10px;
+    color: #000; /* Text color */
+    font-weight: bold;
+    float: left; /* Align to the left */
+    position: absolute;
+    top: 0;
+    left: 250px;
+    font-size: large;
+}
+
+/* Styles for the customer name */
+.customer-name {
+    text-align: right;
+    padding: 10px;
+    background-color: #0074e4; /* Background color for the name box */
+    color: #fff; /* Text color */
+    font-weight: bold;
+    float: right; /* Align to the right */
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+ body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.account-details {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.name-fields , .detail-fields{
+  display: flex;
+  flex-direction: column;
+}
+
+.name-fields label, .detail-fields {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.id-kra-pin-fields, .county-country-fields {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.id-kra-pin-fields label, .county-country-fields label {
+  margin-right: 10px;
+}
+
+</style>
+</head>
+<title>Account Details</title>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Bank Logo">
+        </div>
+        <ul>
+            <li><a href="#">My Account</a>
+                <ul class="dropdown-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="accdetails.html">Account Details</a></li>
+                </ul>
+            </li>
+            <li><a href="fundstransfer.html">Funds Transfer</a></li>
+            <li><a href="#">Loans</a>
+                <ul class="dropdown-menu">
+                    <li><a href="applyloan.html">Apply Loans</a></li>
+                    <li><a href="payloan.html">Pay Loans</a></li>
+                    <li><a href="paymenthist.html">Payment History</a></li>
+                </ul>
+            </li>
+            <li><a href="mobilebanking.html">Mobile Banking</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        <!--"Log Out" at the bottom of the sidebar -->
+        <div class="logout">
+            <ul>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Your content here -->
+     <header>
+        <!-- Name of the page on the top left -->
+        <div class="page-name">
+            <p>Account Details</p>
+        </div>
+
+        <!-- Customer name on the top right -->
+        <div class="customer-name">
+            <p>Welcome, John Doe</p>
+        </div>
+     </header>
+
+    
+
+    <div class="account-details">
+        <div class="name-fields">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" value="John">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" value="Doe">
+        </div>
+
+        <div class="detail-fields">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="johndoe@example.com">
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" value="+254724567890">
+        </div>
+
+        <div class="id-kra-pin-fields">
+            <label for="idNumber">ID No:</label>
+            <input type="text" id="idNumber" name="idNumber" value="123456789012">
+            <br>
+            <label for="kraPin">KRA Pin:</label>
+            <input type="text" id="kraPin" name="kraPin" value="A1234567">
+        </div>
+
+        <div class="county-country-fields">
+            <label for="county">County:</label>
+            <input type="text" id="county" name="county" value="Nairobi">
+            <br>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" value="Kenya">
+        </div>
+        <div class="form-group-btn">
+            <button type="submit" class="login-button">Save Changes</button>
+    </div>
+
+    </div>
+    <script>
+        // JavaScript to handle dropdown menus
+        const dropdowns = document.querySelectorAll(".sidebar li");
+
+        dropdowns.forEach((item) => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

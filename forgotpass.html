@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="createacc.css">
+</head>
+<title>Forgot Password</title>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="img/logo2.jpg" alt="Forgot Password Image">
+        </div>
+        <div class="forgot-password-form">
+            <h2>Forgot Password</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Enter your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Enter a New Password</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmNewPassword">Confirm New Password</label>
+                    <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="change-password-button">Change Password</button>
+                </div>
+            </form>
+        </div>
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Bank Logo">
+        </div>
+    </div>
+     <script>
+        function checkPasswords() {
+            var newPassword = document.getElementById("newPassword").value;
+            var confirmNewPassword = document.getElementById("confirmNewPassword").value;
+
+            if (newPassword !== confirmNewPassword) {
+                alert("Passwords do not match. Please re-enter.");
+            } else {
+                document.getElementById("passwordForm").submit();
+            }
+        }
+    </script>
+</body>
+</html>

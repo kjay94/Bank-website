@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="loan.css">
+    <title>Document</title>
+</head>
+    <body>
+            <div class="sidebar">
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Bank Logo">
+        </div>
+        <ul>
+            <li><a href="#">My Account</a>
+                <ul class="dropdown-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="accdetails.html">Account Details</a></li>
+                </ul>
+            </li>
+            <li><a href="fundstransfer.html">Funds Transfer</a></li>
+            <li><a href="#">Loans</a>
+                <ul class="dropdown-menu">
+                    <li><a href="applyloan.html">Apply Loans</a></li>
+                    <li><a href="payloan.html">Pay Loans</a></li>
+                    <li><a href="paymenthist.html">Payment History</a></li>
+                </ul>
+            </li>
+            <li><a href="mobilebanking.html">Mobile Banking</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        <!--"Log Out" at the bottom of the sidebar -->
+        <div class="logout">
+            <ul>
+                <li><a href="home.html">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+     <div class="content">
+         
+        <div class="cards">
+          <div class="card">
+            <img class="card__image" src="img/car-icon.jpg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Car Loan</b>
+              </p>
+              <p>
+                10% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+               <div>
+                    <button type="submit" class="apply-loan">Apply Loan</button>
+                  </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/business-icon.jpg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Business Loan</b>
+              </p>
+              <p>
+                11% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+              <div>
+                 <button type="submit" class="apply-loan">Apply Loan</button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/home-icon.jpg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Home Loan</b>
+              </p>
+              <p>
+                12% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+                <div>
+                    <button type="submit" class="apply-loan">Apply Loan</button>
+                  </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/medical-icon2.jpg" alt="">
+            <div class="card__content">
+              <p>
+               <b>Medical Loan</b>
+              </p>
+              9% Interest
+              <p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                </div>
+            </div>
+            <div class="card__info">
+              <div>
+        <button type="submit" class="apply-loan">Apply Loan</button>
+      </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" src="img/student-icon.jpg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Student Loan</b>
+              </p>
+              <p>
+                15% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+              <div>
+        <button type="submit" class="apply-loan">Apply Loan</button>
+      </div>
+            </div>
+          </div>
+          <div class="card">
+        <img class="card__image" src="img/travel-icon.jpg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Travel Loan</b>
+              </p>
+              <p>
+                11% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+              <div>
+        <button type="submit" class="apply-loan">Apply Loan</button>
+      </div>
+            </div>
+          </div>
+            <div class="card">
+            <img class="card__image" src="img/land-icon1.jpg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Land Loan</b>
+              </p>
+              <p>
+                12% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+              <div>
+        <button type="submit" class="apply-loan">Apply Loan</button>
+      </div>
+            </div>
+            </div>
+            <div class="card">
+            <img class="card__image" src="img/person1-icon.jpeg" alt="">
+            <div class="card__content">
+              <p>
+                <b>Personal Loan</b>
+              </p>
+              <p opacity="0.7">
+                14% Interest
+              </p>
+              <div class="form-group">
+                        <input type="number" id="enteramount" placeholder="Enter Amount">
+                    </div>
+            </div>
+            <div class="card__info">
+                <div>
+                    <button type="submit" class="apply-loan">Apply Loan</button>
+                  </div>
+            </div>
+            </div>
+        
+        </div>
+     </div>
+      <script>
+        // JavaScript to handle dropdown menus
+        const dropdowns = document.querySelectorAll(".sidebar li");
+
+        dropdowns.forEach((item) => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+        // JavaScript Alert and Clear InputBox 
+        const buttons = document.querySelectorAll('button');
+        const inputBoxes = document.querySelectorAll('input');
+
+        for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', () => {
+        inputBoxes[i].value = '';
+        alert('Loan Application Successful! Pending Approval!');
+        });
+        }
+
+      </script>
+</body>
+</html>

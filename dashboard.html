@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+            /* Styles for the name of the page */
+.page-name {
+    text-align: left;
+    padding: 10px;
+    color: #000; /* Text color */
+    font-weight: bold;
+    float: left; /* Align to the left */
+    position: absolute;
+    top: 0;
+    left: 250px;
+    font-size: large;
+}
+
+/* Styles for the customer name */
+.customer-name {
+    text-align: right;
+    padding: 10px;
+    background-color: #0074e4; /* Background color for the name box */
+    color: #fff; /* Text color */
+    font-weight: bold;
+    float: right; /* Align to the right */
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+    </style>
+</head>
+<title>Dashboard</title>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Bank Logo">
+        </div>
+        <ul>
+            <li><a href="#">My Account</a>
+                <ul class="dropdown-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="accdetails.html">Account Details</a></li>
+                </ul>
+            </li>
+            <li><a href="fundstransfer.html">Funds Transfer</a></li>
+            <li><a href="#">Loans</a>
+                <ul class="dropdown-menu">
+                    <li><a href="applyloan.html">Apply Loans</a></li>
+                    <li><a href="payloan.html">Pay Loans</a></li>
+                    <li><a href="paymenthist.html">Payment History</a></li>
+                </ul>
+            </li>
+            <li><a href="mobilebanking.html">Mobile Banking</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        <!--"Log Out" at the bottom of the sidebar -->
+        <div class="logout">
+            <ul>
+                <li><a href="home.html">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Your content here -->
+        <header>
+        <!-- Name of the page on the top left -->
+        <div class="page-name">
+            <p>Dashboard</p>
+        </div>
+
+        <!-- Customer name on the top right -->
+        <div class="customer-name">
+            <p>Welcome, John Doe</p>
+        </div>
+    </header>
+    </div>
+    <script>
+        // JavaScript to handle dropdown menus
+        const dropdowns = document.querySelectorAll(".sidebar li");
+
+        dropdowns.forEach((item) => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>

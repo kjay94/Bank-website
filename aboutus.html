@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <style>
+        /* Styles for the name of the page */
+.page-name {
+    text-align: left;
+    padding: 10px;
+    color: #000; /* Text color */
+    font-weight: bold;
+    float: left; /* Align to the left */
+    position: absolute;
+    top: 0;
+    left: 250px;
+    font-size: large;
+}
+
+/* Styles for the customer name */
+.customer-name {
+    text-align: right;
+    padding: 10px;
+    background-color: #0074e4; /* Background color for the name box */
+    color: #fff; /* Text color */
+    font-weight: bold;
+    float: right; /* Align to the right */
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-style: hidden;
+      }
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-style: hidden #6a3e1f;
+      }
+    </style>
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/logo2.jpg" alt="Bank Logo">
+        </div>
+        <ul>
+            <li><a href="#">My Account</a>
+                <ul class="dropdown-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="accdetails.html">Account Details</a></li>
+                </ul>
+            </li>
+            <li><a href="fundstransfer.html">Funds Transfer</a></li>
+            <li><a href="#">Loans</a>
+                <ul class="dropdown-menu">
+                    <li><a href="applyloan.html">Apply Loans</a></li>
+                    <li><a href="payloan.html">Pay Loans</a></li>
+                    <li><a href="paymenthist.html">Payment History</a></li>
+                </ul>
+            </li>
+            <li><a href="mobilebanking.html">Mobile Banking</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+        <!--"Log Out" at the bottom of the sidebar -->
+        <div class="logout">
+            <ul>
+                <li><a href="home.html">Log Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Your content here -->
+     <header>
+        <!-- Name of the page on the top left -->
+        <div class="page-name">
+            <p>About Us</p>
+        </div>
+
+        <!-- Customer name on the top right -->
+        <div class="customer-name">
+            <p>Welcome, John Doe</p>
+        </div>
+     </header>
+        <div id="table">
+      <table border="2" cellspacing="45px" cellpadding="100px" cellsize="100px">
+        <tr>
+            <td colspan="2">
+              <div id ="icon"> <img src="img/icon4.png" alt="Icon 4"> </div>
+              <b>About Wave Bank Kenya</b>
+                <p font-family: "Georgia", Garamond, serif;>At Wave Bank Kenya, we're more than just a financial institution; we're your trusted partner in financial success.
+                Established with a commitment to excellence, innovation, and customer-centric banking solutions, 
+                Wave Bank Kenya has been at the forefront of the Kenyan financial landscape.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <div id ="icon"> <img src="img/icon5.png" alt="Icon 5"> </div>
+              <b>Our Vision</b> <br />
+              <p>
+              To be the leading financial institution, delivering exceptional and accessible banking services to every corner of Kenya.
+              </p>
+            </td>
+            <td>
+                <div id ="icon"> <img src="img/icon6.png" alt="Icon 6"> </div>
+              <b>Our Mission</b> <br />
+              <p>
+              We strive to empower individuals, businesses, and communities by offering a comprehensive range of banking services.
+              With a strong emphasis on customer service, we aim to create financial opportunities that drive economic growth, financial inclusion, and prosperity for all.
+              </p>
+            </td>
+          </tr>
+      </table>
+    </div>
+    
+    <script>
+        // JavaScript to handle dropdown menus
+        const dropdowns = document.querySelectorAll(".sidebar li");
+
+        dropdowns.forEach((item) => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
